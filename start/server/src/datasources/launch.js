@@ -36,7 +36,7 @@ class LaunchAPI extends RESTDataSource {
     const response = await this.get('launches', { flight_number: launchId });
     return this.launchReducer(response[0]);
   }
-  // Returns multiple calls to getLaunchById
+  
   getLaunchesByIds({ launchIds }) {
     return Promise.all(
       launchIds.map(launchId => this.getLaunchById({ launchId })),
