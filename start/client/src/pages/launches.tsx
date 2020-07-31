@@ -1,4 +1,4 @@
-import React, { Fragment }  from 'react';
+import React  from 'react';
 import { RouteComponentProps } from '@reach/router';
 import { gql } from '@apollo/client'
 
