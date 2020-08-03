@@ -4,7 +4,7 @@ import {
   ApolloClient,
   NormalizedCacheObject,
   ApolloProvider,
-  useQuery,
+  // useQuery,
   InMemoryCache,
   gql,
 } from '@apollo/client';
@@ -13,7 +13,8 @@ import injectStyles from './styles';
 
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
   cache: new InMemoryCache(),
-  uri: 'http://localhost:4000/graphql',
+  uri: 'http://localhost:4001/',
+  resolvers: {},
 });
 
 client
